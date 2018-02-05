@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Kushagra Dakmia</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="icon" href="img/kd-logo.jpg" type="image/icon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <!-- <img class="dp" src="img/dp.jpg"> -->
+            <h1>Kushagra Dalmia</h1>
+            <a title="" class="icon" href="#"> <i class="fa fa-code fa-3x"></i> </a>
+            <div id="arraytext" class="text"></div>
+            <h2>Hi there! Thanks for stumbling upon.</h2>
+            <!-- <h2><i><b>You are limited only by your imagination</b></i></h2> -->
+            <p><a href="./resume.pdf" target="_blank"><i class="fa fa-wpforms fa-1x"></i> Resume</a></p>
+            <p><a href="https://github.com/kd2636" target="_blank"><i class="fa fa-github fa-1x"></i> Github</a></p>
+            <p><a href="mailto:dalmia.kushagra@gmail.com" target="_blank"><i class="fa fa-envelope fa-1x"></i> Mail</a></p>
+            <p><a href="https://www.facebook.com/kushagra.Dalmia" target="_blank"><i class="fa fa-facebook fa-1x"></i> Facebook</a></p>
+            <p><a href="https://twitter.com/DalmiaKushagra" target="_blank"><i class="fa fa-twitter fa-1x"></i> Twitter</a></p>
+            <p><a href="www.linkedin.com/in/kd2636" target="_blank"><i class="fa fa-linkedin fa-1x"></i> LinkedIn</a></p>
+
+        </div>
+
+        <canvas></canvas>
+        
+
+        <script src="js/pattern.js"></script>
+
+
+
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/snow.js"></script>
+        <script type="text/javascript">
+        var textarray = [
+            "printf (Hello, World !);",
+            "PRINT Hello, World !;",
+            "Print['Hello, World !']",
+            "NSLog(@'Hello, World !');",
+            "echo 'Hello, World !';",
+            "print('Hello, World !')",
+            "WRITE 'Hello, World !'.",
+            "trace('Hello, World !');",
+            "WRITE 'Hello, World !'.",
+            "MSG: .ASCIIZ 'Hello, World !'",
+            "10 PRINT 'Hello, World !'",
+            "<p>Hello, World !</p>",
+            "put 'Hello, World !'",
+            "puts 'Hello, World !'",
+            "PRINT *, 'Hello, World !'"
+        ];
+
+        function RndText() {
+            var rannum = Math.floor(Math.random() * textarray.length);
+            document.getElementById('arraytext').innerHTML = textarray[rannum];
+        }
+        onload = function() {
+            RndText();
+        }
+
+        var inter = setInterval(function() {
+            RndText();
+        }, 500);
+        </script>
+    </body>
+</html>
